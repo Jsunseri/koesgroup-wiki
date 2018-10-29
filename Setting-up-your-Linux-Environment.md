@@ -1,5 +1,3 @@
-# Linux Setup
-
 These instructions may apply equally well to the [Linux Subsystem for Windows](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
 For Mac, you should use [MacPorts](https://www.macports.org/) for installing packages.
