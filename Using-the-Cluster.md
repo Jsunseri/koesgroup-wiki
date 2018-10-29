@@ -1,6 +1,5 @@
 **Department Documentation:** https://www.csb.pitt.edu/using-the-cluster/
 
-# Useful Commands
 ## Launch an interactive session
 `qsub -I -q any_gpu -l nodes=1:ppn=1:gpus=1,walltime=1:00:00`
 
