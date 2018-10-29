@@ -1,6 +1,5 @@
-[*PyMOL Wiki*](https://pymolwiki.org/index.php/Main_Page)
-
 # Reference
+[*PyMOL Wiki*](https://pymolwiki.org/index.php/Main_Page)
 
 ## Selections
 
