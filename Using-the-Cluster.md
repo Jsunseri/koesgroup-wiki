@@ -32,3 +32,16 @@ python train.py 2 --do-stuff
 ### Launch jobs 1-24 of an array job script
 
 `qsub -t 1-24 your_array_job_script.pbs`
+
+## Checking job status
+```
+alias q='qstat -t  -n -1'
+```
+`-t` shows array jobs as individual jobs, `-n` shows the host name of the node, `-1` puts everything on one line
+
+`-u USERNAME` shows only jobs from a certain user
+
+```
+/net/pulsar/home/koes/dkoes/git/scripts/gpus.py
+```
+Shows per-GPU status.  Can limit output to a provided queue (e.g. `gpus.py dept_gpu`)
