@@ -19,7 +19,7 @@ Change any flag such as `-q`, `nodes`, `walltime`, etc. as needed.
 
 The following aren't queues, but node properties that are added to the resource request line (e.g. ` -l nodes=1:ppn=1:gpus=1:gtx1080Ti`)
 
-`C5`: Compute capability >= 5.0
+`C5`: Compute capability >= 5.0 (probably want this if running deep learning jobs on any_gpu)
 
 `C6`: Compute capability >= 6.0
 
