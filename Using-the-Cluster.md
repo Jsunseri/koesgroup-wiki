@@ -5,6 +5,25 @@
 
 Change any flag such as `-q`, `nodes`, `walltime`, etc. as needed.
 
+## Queues 
+
+`dept_gpu` All departmental GPU nodes.  Anyone can use.  About half of these nodes I bought, but I was taught to share as a child so they are in the departmental queue.
+
+`dept_gpu_8GB`  Since all dept_gpu nodes now have 8GB of RAM (on the GPU), this is a higher priority version of dept_gpu.  
+
+`dept_gpu_12GB`  Only nodes with >= 11GB of GPU RAM
+
+`any_gpu`  Job will be scheduled on any available GPU (including nodes in group queues), but has a time limit of 24 hours.
+
+### Node Properties
+
+The following aren't queues, but node properties that are added to the resource request line (e.g. ` -l nodes=1:ppn=1:gpus=1:gtx1080Ti`)
+
+`C5`: Compute capability >= 5.0
+`C6`: Compute capability >= 6.0
+`M12`: GPU memory >=12 GB (excludes 11GB cards)
+`gtx1080Ti`, `Volta`, `TitanV`, etc: Specific class of video card.
+
 ## Array Jobs
 ### PBS Script
 ```
