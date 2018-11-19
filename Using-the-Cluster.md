@@ -28,6 +28,9 @@ The following aren't queues, but node properties that are added to the resource 
 `gtx1080Ti`, `Volta`, `TitanV`, etc: Specific class of video card.
 
 ## Array Jobs
+
+Array jobs launch many jobs using the same run script, changing only the PBS_ARRAYID variable.  These are good ways to launch large numbers of jobs without overburdening the queue system.  You might use this to run three replicates of an MD simulation using the same run script. It also supports an easy pattern from running many commands listed in a text file (one per a line): 
+
 ### PBS Script
 ```
 #!/bin/bash
