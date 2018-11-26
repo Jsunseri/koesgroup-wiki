@@ -70,3 +70,12 @@ alias q='qstat -t  -n -1'
 /net/pulsar/home/koes/dkoes/git/scripts/gpus.py
 ```
 Shows per-GPU status.  Can limit output to a provided queue (e.g. `gpus.py dept_gpu`)
+
+## Running Caffe
+
+You will need to setup your local environment:
+```
+export LD_LIBRARY_PATH=/net/pulsar/home/koes/dkoes/local/lib:/usr/lib64:/usr/lib/x86_64-linux-gnu:/usr/local/cuda-9.0/lib64:/usr/lib
+export PYTHONPATH=/net/pulsar/home/koes/dkoes/local/python
+export PATH=$PATH:/net/pulsar/home/koes/dkoes/git/gninascripts:/net/pulsar/home/koes/dkoes/local/bin
+```
