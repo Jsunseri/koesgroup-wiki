@@ -27,6 +27,16 @@ The following aren't queues, but node properties that are added to the resource 
 
 `gtx1080Ti`, `Volta`, `TitanV`, etc: Specific class of video card.
 
+## Resource Requests
+
+You can specify a specific node.  Make sure that node is in the queue you are submitting to.
+
+`-l nodes=n155.dcb.private.net:ppn=1:gpus=1`
+
+If you job requires a lot of memory, you should request a memory reservation.  This prevents it from being scheduled on a node without enough memory and getting killed by the out of memory (oom) killer.  If you job uses more than the requested amount of memory, it will get killed (even if there is enough memory available on the machine), so be conservative in your estimate of how much is needed.
+
+`-l nodes=1:ppn=1:gpus=1,mem=32G`
+
 ## Array Jobs
 
 Array jobs launch many jobs using the same run script, changing only the PBS_ARRAYID variable.  These are good ways to launch large numbers of jobs without overburdening the queue system.  You might use this to run three replicates of an MD simulation using the same run script. It also supports an easy pattern from running many commands listed in a text file (one per a line): 
@@ -75,7 +85,7 @@ Shows per-GPU status.  Can limit output to a provided queue (e.g. `gpus.py dept_
 
 You will need to setup your local environment:
 ```
-export LD_LIBRARY_PATH=/net/pulsar/home/koes/dkoes/local/lib:/usr/lib64:/usr/lib/x86_64-linux-gnu:/usr/local/cuda-9.0/lib64:/usr/lib
+export LD_LIBRARY_PATH=/net/pulsar/home/koes/dkoes/local/lib:/usr/lib64:/usr/lib/x86_64-linux-gnu:/usr/local/cuda-10.0/lib64:/usr/lib
 export PYTHONPATH=/net/pulsar/home/koes/dkoes/local/python
 export PATH=$PATH:/net/pulsar/home/koes/dkoes/git/gninascripts:/net/pulsar/home/koes/dkoes/local/bin
 ```
