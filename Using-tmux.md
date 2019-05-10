@@ -76,5 +76,6 @@ If your computer restarts, you will lose all of your sessions. There is a way to
     set -g @plugin 'nhdaly/tmux-better-mouse-mode'
     set -g @emulate-scroll-for-no-mouse-alternate-buffer "on" # lets less and vi scroll in tmux
     ```
+5. Another tip: run `tmux` on any workstation you use to persist your history on that machine!
 
 
