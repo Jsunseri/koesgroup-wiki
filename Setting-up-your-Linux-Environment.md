@@ -12,6 +12,7 @@ Some common python packages:
 
 `sudo pip install matplotlib scipy sklearn scikit-image protobuf psutil numpy seaborn jupyter plumbum MDAnalysis biopython Pillow prody py3dmol pandas cython`
 
+_We highly recommend_ using a terminal session manager such as tmux (our group's tutorial is [here](https://github.com/dkoes/docs/wiki/Using-tmux)).
 
 ## Environment
 
