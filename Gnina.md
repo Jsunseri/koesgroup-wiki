@@ -15,5 +15,5 @@ Gnina serves as the groups primary way to perform docking. There are 2 basic fun
 
 **-- CNN scoring function --**
 * using built-in model: `gnina -r <receptor structure> -l <ligand structure> --autobox_ligand <structure at the center of search> -o <output file> --cnn_scoring --gpu` 
-* using different model + weights: `gnina -r <receptor structure> -l <ligand structure> --autobox_ligand <structure at the center of search> -o <output file> --cnn_scoring --gpu --cnn_model <model file> --cnn_weights < .caffemodel weights file>`
-* In the output file, the `<CNNscore>` is the score (0-1) assigned to the pose by the CNN, higher is better. `<CNNaffinity>` is the predicted affinity of this particular pose to the receptor structure. Higher is better.
+* using different model + weights: `gnina -r <receptor structure> -l <ligand structure> --autobox_ligand <structure at the center of search> -o <output file> --cnn_scoring --gpu --cnn_model <model file> --cnn_weights <weights file>`
+* In the output file, the `<CNNscore>` is the score (0-1) assigned to the pose by the CNN, higher is better. `<CNNaffinity>` is the predicted affinity of this particular pose to the receptor structure. Higher is better. `<minimizedAffinity>` is the score provided by AutoDock Vina, lower is better.
