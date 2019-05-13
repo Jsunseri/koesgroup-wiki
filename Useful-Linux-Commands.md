@@ -95,7 +95,7 @@
 #### `sed` -- filter and transform text
 * `-i` - edit files in place
 * Example 1: Change first HIE to HIS `sed 's/HIE/HIS/' file.pdb > new.pdb`
-* Example 2: Change ALL HIE to HIS **inplace** `sed 's/HIE/HIS/g' file.pdb`
+* Example 2: Change ALL HIE to HIS **inplace** `sed -i 's/HIE/HIS/g' file.pdb`
 
 
 # Environment Variables
