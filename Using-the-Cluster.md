@@ -81,6 +81,9 @@ alias q='qstat -t  -n -1'
 ```
 Shows per-GPU status.  Can limit output to a provided queue (e.g. `gpus.py dept_gpu`)
 
+## Checking output
+Upon completion anything printed to stdout/stderr should be copied into a file `<jobname>.o<queue id>` or `<jobname>.e<queue id>`.  This is the first place to look for errors when jobs end abruptly.
+
 ## Running Caffe
 
 You will need to setup your local environment:
