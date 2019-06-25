@@ -13,6 +13,7 @@
 #### `cp <src> <dst>` -- copy files
 * `-r` copy a directory recursively
 #### `scp <src> <hostname>:<dst>` -- secure cp; copy files to remote hostname
+* `-r` copy recursively, needed to copy directories
 #### `mv <src> <dst>` -- move files
 #### `mkdir <dir>` -- create a new directory
 #### `rm` - delete files
