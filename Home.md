@@ -3,9 +3,9 @@
 This repository contains the collected wisdom of the research group.
 Hopefully the total amount of wisdom (including uncollected) is much larger, but if I had to summarize:
 
-* ** Look at your data**
-* ** Think about your data**
-* ** More pictures**
+* **Look at your data**
+* **Think about your data**
+* **More pictures**
 
 ## General logistics
 * There is a weekly group meeting where one person presents a paper and a subset of people share recent results
