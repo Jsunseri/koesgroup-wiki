@@ -12,6 +12,8 @@ Below is a PBS script that can be used to submit multiple simulations using arra
 #PBS -l walltime=24:00:00:00
 #PBS -q dept_gpu
 
+#the following may need to be updated if amber is rebuilt with newer cuda
+export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH
 
 echo Running on `hostname`
 echo workdir $PBS_O_WORKDIR
