@@ -53,8 +53,8 @@ While inside a `tmux` session, you control your environment using the control co
 *  `"`: split the window horizontally
 *  `d`: detach from the current session
 
-Below is a nice summary of several other popular commands:
-![Command summary figure](https://linuxacademy.com/site-content/uploads/2016/08/tmux-3-1-1024x640.png)
+Below is a nice summary of several other popular commands from the [Linux Academy](https://linuxacademy.com/blog/linux/tmux-cheat-sheet/) blog:
+![Command summary figure](https://2rwky424s9rd179jmbzqsca1-wpengine.netdna-ssl.com/wp-content/uploads/2016/08/tmux.png)
 
 ##### Important!!
 
