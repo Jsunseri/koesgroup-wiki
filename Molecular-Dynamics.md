@@ -65,7 +65,7 @@ protein hydrogens before beginning with OpenBabel, and pass the prepared
 protein with ligand structures containing the desired hydrogens to
 `prepareamber.py` with the `-noh` option. 
 
-## Troubleshooting<a name="troubleshoot"></a>
+## Troubleshooting prepareamber.py<a name="troubleshoot"></a>
 1. [ImportError: Check that obabel is on your path](#obabel)
 2. [ImportError: Check that AMBER binaries are on your path](#amber)
 3. [ImportError: Check match\_atomname (one of the antechamber-related
@@ -114,19 +114,19 @@ with Gaussian (available on the cluster) may be required.
   to rerun antechamber with common net charge values. If you are confident that
   your starting hydrogens are correct, you should run the script with `-noh`
   (with the caveat that you might want to strip out the protein hydrogens first
-  if you are simulating a complex, e.g. with `pdb4amber`). You can also pass a
-  desired net charge to antechamber with `--net_charge`. 
+  if you are simulating a complex, e.g. with `pdb4amber`). You can also specify
+  a desired net charge by passing `--net_charge` to `prepareamber`. 
 
-- Always sanity check your structures. If antechamber fails, visualize it and
-  make sure things look normal. This is especially true if all of the above
-  fails, but as a rule you should __always check your data__, and that's
-  exactly what your structure is. Another common problem is incorrect bonding
-  or geometry, which can be introduced as the structure is processed by
-  different pieces of software. For example, some software infers bonds based
-  on distance, and may incorrectly introduce a bond when the ligand's geometry
-  is strained. It's often easier to find these kinds of problems quickly by
-  looking at the structure in PyMol than by staring at the file in your text
-  editor.  
+- Always sanity check your structures. If antechamber fails, visualize the
+  structure it failed with and make sure things look normal. This is especially
+  true if all of the above fails, but as a rule you should __always check your
+  data__, and that's exactly what your structure is. Another common problem is
+  incorrect bonding or geometry, which can be introduced as the structure is
+  processed by different pieces of software. For example, some software infers
+  bonds based on distance, and may incorrectly introduce a bond when the
+  ligand's geometry is strained. It's often easier to find these kinds of
+  problems quickly by looking at the structure in PyMol than by staring at the
+  file in your text editor.  
 [(Back)](#troubleshoot)
 
 # PBS MD Jobs
