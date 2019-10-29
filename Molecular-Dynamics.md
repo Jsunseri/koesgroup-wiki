@@ -86,7 +86,7 @@ group-owned workstation, try `/home/dkoes/build`. Set `AMBERHOME=/path/to/amber`
 See [this thread](http://archive.ambermd.org/201905/0313.html) for more information. 
 Patch things up by doing the following: `cd $AMBERHOME/AmberTools/src/antechamber`. Then `make match_atomname` and `cp match_atomname $AMBERHOME/bin`. If your environment variables have been properly set up, `which match_atomname` should now return that executable. [(Back)](#troubleshoot)
 
-### Antechamber failed. Check XXX structure.<a name="antehamber"></a>
+### Antechamber failed. Check XXX structure.<a name="antechamber"></a>
 Antechamber is the Amber program that is used to parametrize small molecules.
 It can fail for various reasons. 
 
